@@ -127,9 +127,11 @@ class mm_easy_font_icons {
         // post type checkboxes
            
         foreach ( self::$mm_efi_post_types as $post_type ) {
+            
+            $cpt_name = ucfirst( $post_type );
 
             add_settings_field( "mm_efi_id_{$post_type}",
-                                __( ucfirst( $post_type ) ), 
+                                __( "Display on {$cpt_name}" ), 
                                 "mm_easy_font_icons::mm_efi_cb_post_type", 
                                 'mm-efi-admin-main', 
                                 'mm_efi_section_id_1',
@@ -236,8 +238,10 @@ class mm_easy_font_icons {
         // validate font color
         
             $key = 'font-color';
+            
+            $input[$key] = preg_replace( '/[#]/', '', $input[$key] );
         
-            $valid[$key] = preg_replace( '/[^a-fA-F0-9 ]/', '', $input[$key] );
+            $valid[$key] = preg_replace( '/[^a-fA-F0-9]/', '', $input[$key] );
 
             if ( $valid[$key] != $input[$key] ) {
 
