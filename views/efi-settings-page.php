@@ -47,38 +47,38 @@
  * 
  */
 
-echo "<br /><br />";
-
-echo "<br /><br />";
-
-
-
-$array1 = array( '23', '6', '33' );
-
-$array2 = array( '34', '7', '6' );
-
-$array3 = array_intersect( $array1, $array2 );
-
-print_r( $array3 );
-
-
-
-
-
-
-
-
-echo "<br /><br />";
-
-echo "<br /><br />";
-
-$options_echo = get_option( 'mm_efi_main_settings' );
-
-foreach ( $options_echo as $key => $option ) {
-    
-    echo $key . " : " . $option . "<br /><br />";
-
-}
+//echo "<br /><br />";
+//
+//echo "<br /><br />";
+//
+//
+//
+//$array1 = array( '23', '6', '33' );
+//
+//$array2 = array( '34', '7', '6' );
+//
+//$array3 = array_intersect( $array1, $array2 );
+//
+//print_r( $array3 );
+//
+//
+//
+//
+//
+//
+//
+//
+//echo "<br /><br />";
+//
+//echo "<br /><br />";
+//
+//$options_echo = get_option( 'mm_efi_main_settings' );
+//
+//foreach ( $options_echo as $key => $option ) {
+//    
+//    echo $key . " : " . $option . "<br /><br />";
+//
+//}
 
 
 
