@@ -1,13 +1,8 @@
 <?php
 /**
- * Helper functions for this plugin
- * 
- * @package CustomFieldFontIcons
- * 
- * @author Leon Magee
- * @version 1.0.0
- * @since 1.0.0
- * 
+ * Helper functions
+ *
+ *
  */
 
 
