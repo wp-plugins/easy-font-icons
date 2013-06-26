@@ -236,8 +236,10 @@ class mm_easy_font_icons {
         // validate font color
         
             $key = 'font-color';
+            
+            $input[$key] = preg_replace( '/[#]/', '', $input[$key] );
         
-            $valid[$key] = preg_replace( '/[^a-fA-F0-9 ]/', '', $input[$key] );
+            $valid[$key] = preg_replace( '/[^a-fA-F0-9]/', '', $input[$key] );
 
             if ( $valid[$key] != $input[$key] ) {
 
