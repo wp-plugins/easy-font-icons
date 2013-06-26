@@ -23,10 +23,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-
-
-
-
 // ***** INCLUDE FILES *****
 
     require_once( dirname( __FILE__ ) . '/lib/mm-easy-font-icons.php' );
@@ -57,5 +53,3 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     add_action( 'admin_init', 'mm_efi_enqueue_scripts::mm_efi_scripts_styles' );
 
     add_action( 'wp_enqueue_scripts', 'mm_efi_enqueue_scripts::mm_efi_font_styles' );
-
-    
