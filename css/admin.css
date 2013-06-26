@@ -1,0 +1,119 @@
+/**
+ * Easy Font Icons -> Admin Stylesheet
+ * 
+ * @author Leon Magee
+ * @version 1.0.0
+ * @since 1.0.0
+ */
+ 
+
+.efi-header
+{
+    padding: 1em 1em;
+}
+
+.efi-header th, .efi-header td
+{
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+}
+
+.efi-header td
+{
+    padding-top: 2.5em; 
+    padding-bottom: 2.0em; 
+}
+
+.efi-header select
+{
+    padding: 0.5em;
+    padding-top: 0.6em;
+    height: 2.4em;
+}
+
+.efi-header select:focus
+{
+    outline: none;
+}
+
+.efi-icons
+{
+    font-size: 340%;
+    color: #222;
+    text-shadow: 1px 1px 0px #FFF;
+}
+
+.efi-icons .mm_efi_etr
+{
+    font-size: 140%;
+}
+
+.efi-current-font-icon
+{
+    font-size: 600% !important;
+    color: #21759B;
+}
+
+.efi-icons .font-icon
+{   
+    float: left;
+    margin: 2px;
+    padding: 20px 5px 2px 5px;
+    text-align: center;
+    width: 1.5em;
+    border-radius: 70px;
+    border: 6px solid #F6F6F6;
+    height: 38px;
+    width: 50px; 
+}
+
+.efi-select-font
+{
+    float: left;
+    margin: 2em;
+}
+
+.efi-icons .font-icon:hover
+{
+    cursor: pointer;
+    color: #D54D21;
+    color: #21759B;
+}
+
+.efi-icons .font-icon.selected
+{
+    color: #21759B;
+    border-color: #21759B;
+}
+
+.efi-icons .font-icon.selected:hover
+{
+    color: #21759B;
+}
+
+.pushbottom
+{
+    clear: both;
+}
+
+select
+{
+    outline:none;
+}
+
+.efi-message
+{
+    float: left;
+    margin-left: 1em !important;
+    padding: 0.4em 0.6em !important;
+}
+
+h2#select_new_icon
+{
+    margin: 0;
+    padding: 0;
+    margin-left: 25px;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
