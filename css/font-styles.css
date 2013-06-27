@@ -56,6 +56,16 @@
 
 }
 
+@font-face 
+{
+    font-family: 'Socialico';
+    src: url('fonts/Socialico.otf');
+    src: url('fonts/Socialico.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 .mm_efi_mpn
 {
@@ -75,4 +85,9 @@
 .mm_efi_etr
 {
     font-family: 'EntypoRegular' !important;
+}
+
+.mm_efi_soc
+{
+    font-family: 'Socialico' !important;
 }
