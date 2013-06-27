@@ -62,6 +62,8 @@
 
                         <option value="mm_efi_etr" <?php selected( $current_font, 'mm_efi_etr' ); ?> >Entypo Regular</option>
 
+                        <option value="mm_efi_soc" <?php selected( $current_font, 'mm_efi_soc' ); ?> >Socialico</option>
+                        
                     </select>
 
                 </td>
