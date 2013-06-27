@@ -13,8 +13,7 @@ Easy Font Icons will add a font icon to your post, page, or custom post type.
 Easy Font Icons lets you add a font icon to any post, page, or custom post type. It displays a custom meta box below the content editor where you choose the icon and link it to the post. 
 You can choose to display the icon in two ways:
 - by adding a function to the loop in your theme file
-- appending the icon to the h1 tag of your post
- 
+- appending the icon to the h1 tag of your post...
 
 == Installation ==
 
