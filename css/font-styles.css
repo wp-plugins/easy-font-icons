@@ -53,19 +53,19 @@
          url('fonts/heydings_controls-webfont.svg#HeydingsControlsRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face 
 {
     font-family: 'Socialico';
-    src: url('fonts/Socialico.otf');
-    src: url('fonts/Socialico.ttf') format('truetype');
+    src: url('fonts/socialico-webfont.eot');
+    src: url('fonts/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/socialico-webfont.woff') format('woff'),
+         url('fonts/socialico-webfont.ttf') format('truetype'),
+         url('fonts/socialico-webfont.svg#Socialico') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
-
 
 .mm_efi_mpn
 {
