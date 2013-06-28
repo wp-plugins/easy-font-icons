@@ -3,23 +3,20 @@
 Plugin Name: Easy Font Icons
 Plugin URI: http://mageemedia.net
 Description: Choose from 100s of font icons to add to your posts, pages, or custom post types.
-Version: 1.0.3
+Version: 1.0.6
 Author: Leon Magee
 Author URI: http://mageemedia.net
 License: GPL3
-
-Copyright 2013 Leon Magee  (email : leonmagee@hotmail.com)
-
+------------------------------------------------------------------------
+Copyright 2013 Magee Media
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
-
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
-
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
@@ -31,7 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     
     require_once( dirname( __FILE__ ) . '/lib/mm-efi-enqueue-scripts.php' );
     
-    
+
     
     
 // ***** ACTIONS *****
