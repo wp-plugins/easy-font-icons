@@ -4,7 +4,7 @@ Donate link: http://www.mageemedia.net
 Tags: Leon Magee, Font Icons, Content, Posts
 Requires at least: 3.5.0
 Tested up to: 3.5.2
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 
 Easy Font Icons will add a font icon to your post, page, or custom post type.
 
@@ -37,7 +37,7 @@ The plugin is simple to install:
 
 = What font icon sets are included? =
 
-Currently we have Modern Pictograms, Entypo Webfont, Heydings Controls & Heydings Icons.
+Currently we have Modern Pictograms, Entypo Webfont, Heydings Controls, Heydings Icons & Socialico.
 
 == Screenshots ==
 
@@ -50,3 +50,6 @@ Currently we have Modern Pictograms, Entypo Webfont, Heydings Controls & Heyding
 
 = 1.0.1 =
 * First Tagged Update
+
+= 1.0.7 =
+* Added Socialico Font
