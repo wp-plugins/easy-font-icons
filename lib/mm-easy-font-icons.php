@@ -1,28 +1,9 @@
 <?php
-/*
-Plugin Name: Easy Font Icons
-Plugin URI: http://mageemedia.net
-Description: Easily choose from 100s of icons to add to your posts or pages
-Version: 1.0.0
-Author: Leon Magee
-Author URI: http://mageemedia.net
-License: GPL3
-
-Copyright 2013 Leon Magee  (email : leonmagee@hotmail.com)
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*/
+/**
+ * mm_easy_font_icons class
+ *
+ *
+ */
 
 
 
@@ -431,20 +412,25 @@ class mm_easy_font_icons {
             switch ( $output_type ) {
 
                 case 'mm-efi-before-title' :
+                    
+                    $x = 1;
+                    
+                    if ( $x == $x ) {
 
-                    add_filter( 'the_title', 'mm_easy_font_icons::mm_efi_append_title' );
+                        add_filter( 'the_title', 'mm_easy_font_icons::mm_efi_append_title', 10, 2 );
+                    }
 
                     break;
 
                 case 'mm-efi-custom' :
 
-                    add_filter( 'init', 'mm_easy_font_icons::mm_efi_custom_icon' );
+                    add_action( 'init', 'mm_easy_font_icons::mm_efi_custom_icon' );
 
                     break;   
 
                 default :
 
-                    add_filter( 'init', 'mm_easy_font_icons::mm_efi_custom_icon' );
+                    add_action( 'init', 'mm_easy_font_icons::mm_efi_custom_icon' );
 
                     break;           
             }
@@ -460,25 +446,33 @@ class mm_easy_font_icons {
      * 
      */
 
-    public static function mm_efi_append_title( $title ) {
+    public static function mm_efi_append_title( $title, $id ) {
 
         global $post;
 
-        if ( $title === $post->post_title ) {
+        if ( ( $title == $post->post_title ) && ( $id == $post->ID ) ) {
             
-            $size = self::$font_size;
+            $output = get_post_meta( $post->ID, '_mm_efi_output_type', true );
             
-            $unit = self::$font_unit;
+            if ( $output == 'mm-efi-before-title' ) {
             
-            $color = self::$font_color; 
+                $size = self::$font_size;
 
-            $icon = get_post_meta( $post->ID, '_mm_efi_font_icon', true );
+                $unit = self::$font_unit;
 
-            $font = get_post_meta( $post->ID, '_mm_efi_current_font', true );
+                $color = self::$font_color; 
 
-            $div = "<span style='font-size:{$size}{$unit}; color:#{$color};' class='" . $font . "'>" . $icon . "</span>";
+                $icon = get_post_meta( $post->ID, '_mm_efi_font_icon', true );
 
-            return $div . " ". $title;  
+                $font = get_post_meta( $post->ID, '_mm_efi_current_font', true );
+
+
+
+                $div = "<span style='font-size:{$size}{$unit}; font-weight: normal; color:#{$color};' class='" . $font . "'>" . $icon . "</span>";
+
+                return $div . " ". $title; 
+            
+            }
         }
 
         return $title;
