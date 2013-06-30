@@ -2,16 +2,11 @@
 /**
  * Enqueue Scripts
  *
- *
  */
-
-
 
 class mm_efi_enqueue_scripts {
     
-    
-    
-// ***** STYLES AND SCRIPTS *****
+    // admin styles and scripts
    
     public static function mm_efi_scripts_styles() {
        
@@ -30,6 +25,8 @@ class mm_efi_enqueue_scripts {
        
        wp_enqueue_script( 'mm-efi-javascript' );
    }
+   
+   // live site styles
    
    public static function mm_efi_font_styles() {
        

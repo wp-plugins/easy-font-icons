@@ -4,7 +4,7 @@ Donate link: http://www.mageemedia.net
 Tags: Leon Magee, Font Icons, Content, Posts
 Requires at least: 3.5.0
 Tested up to: 3.5.2
-Stable tag: 1.0.8
+Stable tag: 1.0.11
 
 Easy Font Icons will add a font icon to your post, page, or custom post type.
 
@@ -24,7 +24,24 @@ If you choose the default output option, you will need to use the following code
 
 `<?php mm_easy_font_icons::mm_efi_custom_icon() ?>`
 
-This method will output a <span> tag containing the icon and some inline css classes.
+This method will output a `<span>` tag containing the icon and some inline CSS styles. This first option is more for developers or people who have some experience in modifying WordPress themes. 
+
+You can also choose the "before title" option. This will append the icon before the "the_title" with the H1 tag.
+
+Regardless of the method you choose, the icon will be output within a span tag with three CSS classes and some inline CSS.
+The classes will be:
+
+`.mm_efi_{font-identifier}
+.efi_font_{font-icon-letter}
+.efi_post_num_{POST ID}`
+
+These three classes will vary depending on the font style selected, the icon (letter) selected, and the ID of the post.
+
+You can override any syles by using these classes. You may need to use '!important' with your CSS style declaration to make it override the existing styles. 
+
+If you have any difficulties with this plugin, please send me an email at: webdesign@mageemedia.net
+
+
 
 The plugin is simple to install:
 
