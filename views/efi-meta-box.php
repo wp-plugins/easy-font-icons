@@ -2,12 +2,6 @@
 /**
  * Output EFI Meta Box
  * 
- * @package EasyFontIcons
- * 
- * @author Leon Magee
- * @version 1.0.0
- * @since 1.0.0
- * 
  */
 ?>
 
@@ -22,7 +16,7 @@
 
                 <th>Current Icon</th>
 
-                <th>Current Classes</th>
+                <th>Current CSS Classes</th>
 
                 <th>Change Font Family</th>
 
@@ -48,7 +42,7 @@
 
                 </td>
 
-                <td><?php echo $current_font . " " . $current_icon . " " . $post->ID; ?></td>
+                <td><?php echo "." . $current_font . "<br /> .efi_font_" . $current_icon . "<br /> .efi_post_num_" . $post->ID; ?></td>
 
                 <td>
 

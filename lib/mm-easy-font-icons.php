@@ -437,14 +437,8 @@ class mm_easy_font_icons {
         }  
     }
     
-    /*
-     *   prepend to post title
-     * 
-     * 
-     *   I'm not sure if wrapping in a <span> is correct, it might not allow for best styling (padding, margin)
-     *   etc...
-     * 
-     */
+   
+    // prepend to post title
 
     public static function mm_efi_append_title( $title, $id ) {
 
@@ -468,7 +462,7 @@ class mm_easy_font_icons {
 
 
 
-                $div = "<span style='font-size:{$size}{$unit}; font-weight: normal; color:#{$color};' class='" . $font . "'>" . $icon . "</span>";
+                $div = "<span style='font-size:{$size}{$unit}; font-weight: normal; color:#{$color};' class='" . $font . " efi_font_" . $icon . " efi_post_num_" . $post->ID . "'>" . $icon . "</span>";
 
                 return $div . " ". $title; 
             
@@ -477,13 +471,6 @@ class mm_easy_font_icons {
 
         return $title;
     }
-    
-    //<p style="background:#ccc; color:#fff; border: solid black 1px;">
-    
-    
-    // return content with styles
-    
-    // call mm_easy_font_icons::mm_efi_custom_icon in template
     
     public static function mm_efi_custom_icon() {
         
@@ -499,11 +486,7 @@ class mm_easy_font_icons {
 
         $font = get_post_meta( $post->ID, '_mm_efi_current_font', true );
     
-        echo "<span style='font-size:{$size}{$unit}; color:#{$color};' class='" . $font . " " . $icon . " " . $post->ID . "'>" . $icon . "</span>";
+        echo "<span style='font-size:{$size}{$unit}; color:#{$color};' class='" . $font . " efi_font_" . $icon . " efi_post_num_" . $post->ID . "'>" . $icon . "</span>";
     }
-    
-    
-
-    
     
 }
