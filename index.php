@@ -3,7 +3,7 @@
 Plugin Name: Easy Font Icons
 Plugin URI: http://mageemedia.net
 Description: Choose from 100s of font icons to add to your posts, pages, or custom post types.
-Version: 1.0.10
+Version: 1.0.11
 Author: Leon Magee
 Author URI: http://mageemedia.net
 License: GPL3
